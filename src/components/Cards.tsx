@@ -12,8 +12,8 @@ text: string
 const Cards = ({cardkey,title, img, text}: Props) => {
   return (
 <div >
-  <div className='rounded-full bg-primary-200 h-24 w-24 absolute -mt-14  ml-8'>
-<img src={img} alt="" className='flex items-center justify-center mx-auto mt-4 w-12'/>
+  <div className='rounded-full bg-primary-200 h-24 w-24 absolute -mt-14 ml-8 '>
+<img src={img} alt="" className='flex items-center justify-center mx-auto mt-6 w-12'/>
   </div>
       <div className='bg-white h-64 w-80 rounded-xl '>
       <div className='pt-16 p-4'>
