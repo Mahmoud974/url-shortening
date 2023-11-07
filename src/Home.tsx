@@ -9,8 +9,8 @@ const Home = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
   return (
     <div className='container mx-auto sm:mt-36 mt-16 justify-center sm:px-0 px-2'>
-       <div className='flex sm:justify-between sm:items-center  sm:flex-row flex-col-reverse justify-center text-center sm:text-left'>
-         <div className='space-y-6 '>
+       <div className='flex  sm:items-center  sm:flex-row flex-col-reverse text-center sm:text-left'>
+         <div className='space-y-6 ml-16'>
             <h2 className='sm:text-7xl text-5xl mt-12 md:w-42 font-bold sm:text-left text-center'>
             More than just shorter links
         </h2>
