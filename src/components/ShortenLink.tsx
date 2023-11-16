@@ -21,11 +21,6 @@ const fetchData = async ():Promise<void> => {
    let response: AxiosResponse<any, any> = await axios.get(`https://is.gd/create.php?format=json&url=${input}`);
     setShortenLink(response.data.shorturl);
 
-    let resultData= response.data;
-    
-      if (!resultData || !resultData.full_short_link) {
-        throw new Error("Impossible de raccourcir l'URL. Veuillez réessayer plus tard.");
-      }
       
     } catch (error:any) {
       alert("Une erreur est survenue : " + error.message);

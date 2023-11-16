@@ -14,7 +14,7 @@ type Props = {
   linkTab: string[];
 }
 
-const Advanced:React.FC<Props> = ({linkTab, shortenLink, formSubmitted}) => {
+const Advanced:React.FC<Props> = ({linkTab, shortenLink, formSubmitted, input}) => {
 
   const [copieReussie, setCopieReussie] = useState<boolean>(false);
 
@@ -55,7 +55,7 @@ const Advanced:React.FC<Props> = ({linkTab, shortenLink, formSubmitted}) => {
     <section className='bg-gray-200 -mt-24 pb-36  ' >
       <ul className='pt-24 sm:mx-20 mx-4'>
         {
-          formSubmitted && {linkTab}.linkTab.map((item:any, index:number) => <li key={index} className="mt-6 bg-white flex-wrap  md:h-20 h-auto px-8 rounded-md flex items-center justify-between">
+          formSubmitted  && {linkTab}.linkTab.map((item:any, index:number) => <li key={index} className="container mx-auto mt-6 bg-white flex-wrap  md:h-20 h-auto px-8 rounded-md flex items-center justify-between">
       <p>{item.input}</p>
       <div className='h-2 bg-slate-200'></div>
     <div className='flex md:flex-row flex-wrap items-center space-x-2'>
