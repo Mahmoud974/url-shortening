@@ -8,5 +8,6 @@ export interface CardAdvanced {
     id: number,
     img: string,
     title: string,
-    text: string
+    text: string,
+    cardClass: string
 }

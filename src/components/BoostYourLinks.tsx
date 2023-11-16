@@ -1,8 +1,8 @@
 import Htext from './Htext'
 
-type Props = {}
 
-const BoostYourLinks = (props: Props) => {
+
+const BoostYourLinks = () => {
   return (
     <div className='bg-[url("/img/bg-boost-desktop.svg")] bg-cover text-center h-80 flex justify-center flex-col bg-primary-200 py-12 space-y-6 text-white sm:px-0 px-2' >
         <Htext>
